@@ -13,8 +13,8 @@
     "endDate": "2024-12-05T00:00:00.000Z",
     "title": "تور کردستان",
     "fleetVehicle": "Bus",
-    "price": 105000,
-    "availableSeats": 25,
+    "price": 1050000,
+    "availableSeats": 19,
     "insurance": true,
     "options": [
       "راهنمای تور",
@@ -37,8 +37,8 @@
     "endDate": "2024-12-15T00:00:00.000Z",
     "title": "تور مادرید",
     "fleetVehicle": "Van",
-    "price": 240000,
-    "availableSeats": 15,
+    "price": 2400000,
+    "availableSeats": 14,
     "insurance": false,
     "options": [
       "راهنمای تور",
@@ -60,12 +60,12 @@
     "endDate": "2024-12-25T00:00:00.000Z",
     "title": "سلیمانیه",
     "fleetVehicle": "SUV",
-    "price": 35000,
-    "availableSeats": 40,
+    "price": 350000,
+    "availableSeats": 36,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
-      "هفل پنج ستاره"
+      "هتل پنج ستاره"
     ],
     "image": "/static/images/sulaymaniyahTour.png"
   },
@@ -83,12 +83,12 @@
     "endDate": "2024-12-25T00:00:00.000Z",
     "title": "هولر",
     "fleetVehicle": "SUV",
-    "price": 105000,
-    "availableSeats": 20,
+    "price": 1050000,
+    "availableSeats": 18,
     "insurance": false,
     "options": [
       "نهار و صبحانه",
-      "هفل پنج ستاره"
+      "هتل پنج ستاره"
     ],
     "image": "/static/images/arbilTour.png"
   },
@@ -102,16 +102,16 @@
       "id": "7",
       "name": "Mazandaran"
     },
-    "startDate": "2025-10-20T00:00:00.000Z",
+    "startDate": "2024-10-20T00:00:00.000Z",
     "endDate": "2024-11-25T00:00:00.000Z",
     "title": "تور مازندران",
     "fleetVehicle": "SUV",
-    "price": 185000,
+    "price": 1850000,
     "availableSeats": 300,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
-      "هفل پنج ستاره"
+      "هتل پنج ستاره"
     ],
     "image": "/static/images/mazandaranTour.png"
   },
@@ -129,12 +129,12 @@
     "endDate": "2024-12-25T00:00:00.000Z",
     "title": "تور آفرود",
     "fleetVehicle": "Airplane",
-    "price": 35000,
-    "availableSeats": 25,
+    "price": 350000,
+    "availableSeats": 23,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
-      "هفل پنج ستاره"
+      "هتل پنج ستاره"
     ],
     "image": "/static/images/offroadTour.png"
   },
@@ -152,12 +152,12 @@
     "endDate": "2024-12-25T00:00:00.000Z",
     "title": "تور ایتالیا",
     "fleetVehicle": "Airplane",
-    "price": 18000,
-    "availableSeats": 20,
+    "price": 180000,
+    "availableSeats": 19,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
-      "هفل پنج ستاره"
+      "هتل پنج ستاره"
     ],
     "image": "/static/images/italyTour.png"
   }
