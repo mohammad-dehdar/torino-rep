@@ -1,28 +1,33 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-// استفاده از مسیر موقت Vercel برای نوشتن
+// استفاده از مسیر موقت Vercel برای نوشتن و خواندن داده‌ها
 const dataDirectory = path.join('/tmp', 'DB');
 
 const readData = async (filename) => {
   try {
     const filePath = path.join(dataDirectory, filename);
+    console.log(`Reading data from: ${filePath}`); // مسیر را برای دیباگ چاپ کنید
     const data = await fs.readFile(filePath, 'utf-8');
     return JSON.parse(data);
   } catch (error) {
-    if (error.code === 'ENOENT') return [];
+    if (error.code === 'ENOENT') {
+      console.warn(`File not found: ${filename}`);
+      return [];
+    }
+    console.error(`Error reading file: ${error.message}`);
     throw error;
   }
 };
 
 const writeData = async (filename, data) => {
   try {
-    // اطمینان از ایجاد پوشه در مسیر tmp
     await fs.mkdir(dataDirectory, { recursive: true });
-
     const filePath = path.join(dataDirectory, filename);
+    console.log(`Writing data to: ${filePath}`); // مسیر را برای دیباگ چاپ کنید
     await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
   } catch (error) {
+    console.error(`Error writing file: ${error.message}`);
     throw error;
   }
 };
