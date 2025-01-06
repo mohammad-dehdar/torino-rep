@@ -7,7 +7,7 @@ const dataDirectory = path.join('/tmp', 'DB');
 const readData = async (filename) => {
   try {
     const filePath = path.join(dataDirectory, filename);
-    console.log(`Reading data from: ${filePath}`); // مسیر را برای دیباگ چاپ کنید
+    console.log(`Reading data from: ${filePath}`);
     const data = await fs.readFile(filePath, 'utf-8');
     return JSON.parse(data);
   } catch (error) {
@@ -22,9 +22,11 @@ const readData = async (filename) => {
 
 const writeData = async (filename, data) => {
   try {
+    // اطمینان از اینکه پوشه DB در /tmp ساخته شده
     await fs.mkdir(dataDirectory, { recursive: true });
+
     const filePath = path.join(dataDirectory, filename);
-    console.log(`Writing data to: ${filePath}`); // مسیر را برای دیباگ چاپ کنید
+    console.log(`Writing data to: ${filePath}`);
     await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
   } catch (error) {
     console.error(`Error writing file: ${error.message}`);
