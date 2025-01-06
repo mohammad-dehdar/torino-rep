@@ -2,7 +2,8 @@ const fs = require('fs').promises;
 const path = require('path');
 
 // استفاده از مسیر موقت Vercel برای نوشتن
-const dataDirectory = path.join('/tmp', 'DB');
+// const dataDirectory = path.join('/tmp', 'DB');
+const dataDirectory = path.join(__dirname, '..', 'DB');
 
 const readData = async (filename) => {
   try {
