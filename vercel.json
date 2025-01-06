@@ -11,6 +11,5 @@
       "src": "/(.*)",
       "dest": "app.js"
     }
-  ],
-  "files": ["swagger/swagger.json", "routes", "public"]
+  ]
 }
