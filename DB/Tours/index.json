@@ -14,7 +14,7 @@
     "title": "تور کردستان",
     "fleetVehicle": "Bus",
     "price": 1050000,
-    "availableSeats": 19,
+    "availableSeats": 18,
     "insurance": true,
     "options": [
       "راهنمای تور",
@@ -107,7 +107,7 @@
     "title": "تور مازندران",
     "fleetVehicle": "SUV",
     "price": 1850000,
-    "availableSeats": 300,
+    "availableSeats": 299,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
@@ -153,7 +153,7 @@
     "title": "تور ایتالیا",
     "fleetVehicle": "Airplane",
     "price": 180000,
-    "availableSeats": 19,
+    "availableSeats": 18,
     "insurance": true,
     "options": [
       "نهار و صبحانه",
